@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>opdr6</title>
+</head>
+<script>
+    // op het moment dat het browser-vensteer wordt geschaald:
+    window.onresize = function() {
+        // haal de hoogte op van het aticle element
+        var article=document.getElementById('article')[0].offsetHeight;
+        // zet de opgehaalde hoogte op het nac element
+        document.getElementsByTagName('nav')[0].style.height=article+'px';
+        //kijk eers of het schermgrootte hoger/gelijk is aan 500px
+        if(window.innerWidth >= 500);
+    }
+</script>
+<body>
+    <div class="container">
+        <header>Titel van je website</header>
+        <nav>
+            <article>
+                <h2>Lorem ipsum</h2>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris volutpat aliquet enim, vitae 
+                mollis neque molestie vitae. Nullam accumsan mauris ac tellus semper malesuada. Quisque nec diam non metus fermentum facilisis a ac nibh.
+                Sed ullamcorper magna at diam dignissim, ut molestie velit vulputate. Nullam sagittis ultricies var
+                us. Integer id rutrum nisi. Vivamus porta magna elit, quis ultrices mi porta at. Sed nec nulla odio.
+                Aenean ut turpis facilisis diam rutrum molestie. Nunc et tristique ipsum.</article>
+        <!-- Link 1 <br>
+        Link 2 <br>
+        Link 3 <br> -->
+        </nav>
+        
+        <footer>Copyright© 2017 Yuri Barros</footer>
+    </div>
+    
+</body>
+</html>
